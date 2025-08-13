@@ -3,9 +3,10 @@
 ### What’s the purpose?
 I wanted to have a menu on the top-left of the screen that would allow me to load programs and documents just as in Classic Mac OS, with customizable items. Linux menu applets tend to use automatic menus which conform to the FreeDesktop standard, which typically involves submenus and may not be suited to your muscle memory. The Xfce Applications Menu supports custom menu files and can be made into an approximation of this (which I have done, in my old gMenu), but it doesn’t do it automatically, and it doesn’t handle documents.
 ### How does it work?
-After you add the applet to Xfce4 Panel for the first time, the launch menu icon will appear somewhere on the panel. After clicking on it, a drop-down menu will come up. If you have Hardinfo installed, the first entry will be “About This Computer”, with a link to that program and a separator beneath it. Afterwards, the contents of the Launch Itemsfolder are listed in alphabetical order.
+After you add the applet to Xfce4 Panel for the first time, the launch menu icon will appear somewhere on the panel. After clicking on it, a drop-down menu will come up. If you have Hardinfo installed, the first entry will be “About This Computer”, with a link to that program and a separator beneath it. Afterwards, the contents of the Launch Items folder, which is generated in ~/.config, are listed in alphabetical order.
 
-Desktop files are treated as applications, documents are treated as documents, and folders have submenus that allow you to view their contents. Each submenu has an“Open This Folder” item and separator at the top; then analphabetically arranged list of contents. Submenus go two levels deep. (More than that and it becomes unergonomic.)
+Desktop files are treated as applications, documents are treated as documents, and folders have submenus that allow you to view their contents. Each submenu has an “Open This Folder” item and separator at the top; then analphabetically arranged list of contents. Submenus go two levels deep. (More than that and it becomes unergonomic.)
+
 The applet is automatically configured with a link to Xfce’s Settings Manager. It may also contain two special folders, Recent Applications and Recent Documents, which are populated with the latest items you loaded that the system detected.
 ### Are there preferences to set?
 Yes, four, all of which pertain to the recent items features.
