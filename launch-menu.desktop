@@ -1,0 +1,8 @@
+[Xfce Panel]
+Type=X-XFCE-PanelPlugin
+Name=Launch Menu
+Comment=Classical item-launching menu
+Icon=org.xfce.panel.applicationsmenu
+X-XFCE-Module=launch-menu
+X-XFCE-Unique=false
+X-XFCE-API=2.0
