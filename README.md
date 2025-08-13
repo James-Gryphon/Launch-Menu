@@ -33,9 +33,9 @@ I’ve built and run it on Fedora 42 and Debian 12. It might well work on other 
 ### How do I install it?
 The way I’ve done it is to extract the files into a new folder, and in the terminal, enter “make && sudo make install”, to install the applet to the root system. Then you can restart the panel (perhaps with xfce4-panel -r), and it should come up in “Add New Items”.
 
-Afterwards, for optimal usability, you need to add some applications, documents or folders to the Launch Menu Items folder (which is stored in ~/.config). LaunchMenu will recognize most things you’re likely to put into it, including AppImages, binaries, .desktop files, documents, folders, and symlinks. I recommend using links for as many things as possible.
+Afterwards, for optimal usability, you need to add some applications, documents or folders to the Launch Menu Items folder (which is stored in ~/.config). Launch Menu will recognize most things you’re likely to put into it, including AppImages, binaries, .desktop files, documents, folders, and symlinks. I recommend using links for as many things as possible.
 
-Application .desktop files can be found in /usr/share/applications. With Thunar this is a relatively simple process (you can create a link by using ‘send to desktop’, and then move the new link into the Launch folder), but Caja makes itdifficult to create links to restricted folders. 
+Application .desktop files can be found in /usr/share/applications. With Thunar this is a relatively simple process (you can create a link by using ‘send to desktop’, and then move the new link into the Launch folder), but Caja makes it difficult to create links to restricted folders. 
 
 Personally, I used Caja Actions to create a new command, “Make Link on Desktop”, with the following params:
 
