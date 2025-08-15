@@ -84,7 +84,7 @@ The Recent Applications and Recent Documents folders are ‘magic’, in that th
 
 ~
 
-With recent items tracking turned on, this applet does watch you. Specifically, it relies on wnck (which is why there’s no Wayland support) and the proc directory to detect programs being loaded and to get their proper names, and on the recently-used.xbel file to detect documents. If that bothers you, you’re free to look through the code and verify that there are no network connections or anything else being done that is under-board. Alternatively, you can leave the recent items feature off, which also (should, if I coded it right) will turn this tracking off.
+With recent items tracking turned on, this applet does watch you. Specifically, it relies on wnck (which is why there’s no Wayland support) and the proc directory to detect programs being loaded and to get their proper names, and on the recently-used.xbel file to detect documents. If that bothers you, you’re free to look through the code and verify that there are no network connections or anything else being done that is under-board. Alternatively, you can leave the recent items feature off, which also will (if I coded it right) turn this tracking off.
 
 ~
 
