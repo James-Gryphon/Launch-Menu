@@ -76,7 +76,7 @@ If you are a fan of Classic Macintoshes and want something that reproduces that 
 ### When would I not prefer this?
 If you don’t care about manually organizing programs, documents or folders, and/or you like automatically populated menus, you have no reason to use this applet.
 
-Whisker Menu has a search textbox for quick keyboard-driven program access. Launch Menu doesn’t currently support this feature, preferring to offload it to otherprograms or applets, and is mouse-driven overall.
+Whisker Menu has a search textbox for quick keyboard-driven program access. Launch Menu doesn’t currently support this feature and is currently mouse-driven overall.
 
 If you used Classic Macs before and hated the Apple menu for some reason, this applet won’t do anything that will make you like it any better.
 ### Is there anything I should be concerned about?
@@ -101,7 +101,7 @@ But even so, I technically didn’t originally write most of it. That may bother
 Would it be nice if this applet had been made solely by human ability? Yes. But I don’t have the background in C or GTK’s libraries, or in dealing with xfconf or Xfce Panel’s expectations, and I don’t have the patience to take the time to learn all of them and work up to making this when this project has no apparent profit potential. If anyone else was going to make this, they would have done it by now. So the choice here isn’t between an applet with AI code and an applet by an elite human programmer, it’s a choice between an applet and no applet.
 
 ### Are there any known bugs or limitations?
-With “Classic Duplicate Handling” turned off, a folder may be generated that appears to only have one item in it. This is likely because there’s a file from a hidden directory in that folder. In this case, you have to open the folder manually and ‘view hidden files’ in your file manager. I judged that this defect should not seriously impact anyone except possibly for Linux ‘power users’, who are also capable of working around it, but it’s something to look to fixing when I makethe time.
+With “Classic Duplicate Handling” turned off, a folder may be generated that appears to only have one item in it. This is likely because there’s a file from a hidden directory in that folder. In this case, you have to open the folder manually and ‘view hidden files’ in your file manager. I judged that this defect should not seriously impact anyone except possibly for Linux ‘power users’, who are also capable of working around it, but it’s something to look to fixing when I make the time.
 
 ### Why the license?
 Although GPL v2 isn’t my favorite, culture and the ecosystem seemed to lend themselves to it; it is popular among Xfce applets. The decision to use AI tools also contributed, given that I’m not entirely sure what its sources were, and that given the project context, it seems possible at least some of it could have originally been inspired by GPL code. I feel much of the code that I have reviewed wouldn’t be reasonably implemented in any other way, but it’s better to be safe here.
