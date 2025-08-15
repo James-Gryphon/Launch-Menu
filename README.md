@@ -14,7 +14,7 @@ Yes, four, all of which pertain to the recent items features.
 
 **Enable Recent Applications and Documents**
 
-With this on, the applet tracks application and document loadings. Applications are detected via wnck anda proc check; documents are detected by reading the recently-used.xbel file. If this is unmarked, this tracking is disabled.
+With this on, the applet tracks application and document loadings. Applications are detected via wnck and a proc check; documents are detected by reading the recently-used.xbel file. If this is unmarked, this tracking is disabled.
 
 **Classic Duplicate Handling**
 
