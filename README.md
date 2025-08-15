@@ -1,5 +1,6 @@
 ## Launch Menu
-*A program and document launching menu based on classical standards*
+*A program and document launching menu based on classical standards*<img width="507" height="629" alt="Picture" src="https://github.com/user-attachments/assets/189b8850-5fe7-49b0-b42a-2351c268ce58" />
+
 ### What’s the purpose?
 I wanted to have a menu on the top-left of the screen that would allow me to load programs and documents just as in Classic Mac OS, with customizable items. Linux menu applets tend to use automatic menus which conform to the FreeDesktop standard, which typically involves submenus and may not be suited to your muscle memory. The Xfce Applications Menu supports custom menu files and can be made into an approximation of this (which I have done, in my old gMenu), but it doesn’t do it automatically, and it doesn’t handle documents.
 ### How does it work?
