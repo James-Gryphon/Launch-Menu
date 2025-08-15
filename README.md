@@ -29,9 +29,20 @@ How many recent documents are stored in the list.
 ### What’s compatibility like?
 Xfce, and also MATE, at this time, are designed to work primarily with X11. This applet’s app tracking management features are also designed to work with X11, via wnck. It does not support and is not tested with Wayland, and there is no reason to think it would work at all. (If it somehow does, it will not be because of anything that I did.)
 
-I’ve built and run it on Fedora 42 and Debian 12. It might well work on other distributions, provided they have the appropriate dependencies. If you use another distro and are especially interested in getting this, but the build doesn’t work and you don’t have the experience to tweak it yourself, let me know and I’ll see if I can help.
+I’ve built and run it on Fedora 42, and Debians 12 and 13. It might well work on other distributions, provided they have the appropriate dependencies. If you use another distro and are especially interested in getting this, but the build doesn’t work and you don’t have the experience to tweak it yourself, let me know and I’ll see if I can help.
 ### How do I install it?
-The way I’ve done it is to extract the files into a new folder, and in the terminal, enter “make && sudo make install”, to install the applet to the root system. Then you can restart the panel (perhaps with xfce4-panel -r), and it should come up in “Add New Items”.
+There are two .deb and one .rpm files, which have been 
+tested in Debian 12, 13, and Fedora 42, respectively and should be 
+working correctly.
+
+If you want to build from source, the way I’ve done it is 
+to extract the files into a new folder, and in the terminal, enter “make
+ && sudo make install”, to install the applet to the root 
+system.
+
+Either way, after installation, the applet should show up 
+in Xfce Panel's 'Add New Items'. If not, restart the panel (via 
+xfce4-panel -r) and look again.
 
 Afterwards, for optimal usability, you need to add some applications, documents or folders to the Launch Menu Items folder (which is stored in ~/.config). Launch Menu will recognize most things you’re likely to put into it, including AppImages, binaries, .desktop files, documents, folders, and symlinks. I recommend using links for as many things as possible.
 
@@ -46,10 +57,13 @@ Personally, I used Caja Actions to create a new command, “Make Link on Desktop
 *Working directory: %d*
 
 (If you end up copying the desktop files directly in this case, I can’t say I blame you.)
+
 ### Are there any other features?
 The applet attempts to detect your default file manager, and skips over including it in Recent Applications.
+
+You can add separators to the menu by creating a file of any type that ends with the character '|'. This reimplements the functionality of the old DividerLines extension, except with the symbol changed (I felt the dollar sign was likely to be too common on these systems).
 ### How is this different from what’s already out there?
-The stock Xfce “Application Menu” applet is the closest competitor, although there are others (MATE’s famous Application/Places/System menu, and the WhiskerMenu, which is like the Windows start menu).
+The stock Xfce “Application Menu” applet is the closest competitor, although there are others (MATE’s famous Application/Places/System menu, and the Whisker Menu, which is like the Windows start menu).
 
 • Launch Menu relies on manually-organized contents in the Launch Items folder. Application Menu, and other menus, are based on the FreeDesktop Standard, and uses automatically generated menus, which may or may not conform to your expectations. (They do tend to require submenus.)
 
@@ -69,7 +83,7 @@ The Recent Applications and Recent Documents folders are ‘magic’, in that th
 
 ~
 
-With recent items tracking turned on, this applet does watch you. Specifically, it relies on wnck (which is why there’s no Wayland support) and the proc directory to detect programs being loaded and to get their proper names, and on the recently-used.xbel file to detect documents. If that bothers you, you’re free to look through the code and verify that there are no network connections or anything else being done that is under-board. Alternatively, you can leave the recent items featureoff, which also (should, if I coded it right) leave this tracking off.
+With recent items tracking turned on, this applet does watch you. Specifically, it relies on wnck (which is why there’s no Wayland support) and the proc directory to detect programs being loaded and to get their proper names, and on the recently-used.xbel file to detect documents. If that bothers you, you’re free to look through the code and verify that there are no network connections or anything else being done that is under-board. Alternatively, you can leave the recent items feature off, which also (should, if I coded it right) will turn this tracking off.
 
 ~
 
@@ -87,8 +101,6 @@ Would it be nice if this applet had been made solely by human ability? Yes. But 
 
 ### Are there any known bugs or limitations?
 With “Classic Duplicate Handling” turned off, a folder may be generated that appears to only have one item in it. This is likely because there’s a file from a hidden directory in that folder. In this case, you have to open the folder manually and ‘view hidden files’ in your file manager. I judged that this defect should not seriously impact anyone except possibly for Linux ‘power users’, who are also capable of working around it, but it’s something to look to fixing when I makethe time.
-
-If you like the ability to create new separators by appropriately named folders, that’s currently unimplemented. This could come in the future, though.
 
 ### Why the license?
 Although GPL v2 isn’t my favorite, culture and the ecosystem seemed to lend themselves to it; it is popular among Xfce applets. The decision to use AI tools also contributed, given that I’m not entirely sure what its sources were, and that given the project context, it seems possible at least some of it could have originally been inspired by GPL code. I feel much of the code that I have reviewed wouldn’t be reasonably implemented in any other way, but it’s better to be safe here.
