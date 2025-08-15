@@ -18,7 +18,7 @@ With this on, the applet tracks application and document loadings. Applications 
 
 **Classic Duplicate Handling**
 
-There’s the possibility that you may have documents with the same name. With this checked, the Recent Documents list will only show the most recent document with this name. With it unchecked, files with identical names receive their own submenu folders; the folders contain the names of the folders they are contained in.
+There’s the possibility that you may have documents with the same name. With this checked, the Recent Documents list will only show the most recent document with this name. With it unchecked, files with identical names receive their own submenu folders; the files inside bear the names of the folders they are contained in.
 
 **Max recent applications**
 
