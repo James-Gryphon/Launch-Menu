@@ -103,6 +103,8 @@ Would it be nice if this applet had been made solely by human ability? Yes. But 
 ### Are there any known bugs or limitations?
 With “Classic Duplicate Handling” turned off, a folder may be generated that appears to only have one item in it. This is likely because there’s a file from a hidden directory in that folder. In this case, you have to open the folder manually and ‘view hidden files’ in your file manager. I judged that this defect should not seriously impact anyone except possibly for Linux ‘power users’, who are also capable of working around it, but it’s something to look to fixing when I make the time.
 
+Other new issues I've found have been made issues here on GitHub.
+
 ### Why the license?
 Although GPL v2 isn’t my favorite, culture and the ecosystem seemed to lend themselves to it; it is popular among Xfce applets. The decision to use AI tools also contributed, given that I’m not entirely sure what its sources were, and that given the project context, it seems possible at least some of it could have originally been inspired by GPL code. I feel much of the code that I have reviewed wouldn’t be reasonably implemented in any other way, but it’s better to be safe here.
 This is not a great inconvenience, given the applet’s purpose and audience. Given its intimate access to the system, free access to the source code should help maintain user trust, and I feel all Classic Mac fans should have access to these features if they want them.
